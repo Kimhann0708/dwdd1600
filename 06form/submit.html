@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cat Gallery Capture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sharing pictures of adorable and cute cats photos.">
+    <meta name="author" content="Kimhann Song">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="catgallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- This is the start of the header section. -->
+    <header>
+        <h1>Cat Gallery Capture</h1>
+        <p>The home of adorable cat photos.</p>
+    </header>
+
+<!-- This is the start of the navigation section. -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="submit.html">Submit a Picture</a></li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Submit Your Favorite Cat Moments</h1>
+<form method="get" class="myform" action="thanks.html">
+
+<fieldset>
+    <legend>Cat Details Section</legend>
+<label>Cat Name* <input type="text" name="cat_name" required></label> 
+<label>Breed type* <input type="text" name="breed_type" required></label>
+<label>Cat Gender* <input type="text" name="cat_gender" required></label>
+<label>Cat Age* <input type="text" name="cat_age" required></label>
+<label>Email Address* <input type="email" name="email" required placeholder="example@domain.com">
+</label>
+</fieldset>
+
+<fieldset>
+    <legend>Type of Submission</legend>
+    <label><input type="radio" name="method" value="picture">Picture</label>
+    <label><input type="radio" name="method" value="video">Video</label>
+    <label><input type="radio" name="method" value="gif">Gif</label>
+</fieldset>
+
+<fieldset>
+    <legend>Theme of the content</legend>
+    <label><input type="checkbox" name="cute" value="Cute">Cute</label>
+    <label><input type="checkbox" name="funny" value="Funny">Funny</label>
+    <label><input type="checkbox" name="artistic" value="Artistic">Artistic</label>
+    <label><input type="checkbox" name="heartwarming" value="Heartwarming">Heartwarming</label>
+
+</fieldset>
+
+<fieldset>
+<legend>What Kind of Cats Are They?</legend>
+<label>Cat Personality Types</label>
+    <select name="theme" id="theme">
+        <option value="none">Please Select</option>
+        <option value="goofy">Goofy and Playful</option>
+        <option value="shy">Shy and Mysterious</option>
+        <option value="adventurous">Bold and Adventurous</option>
+        <option value="lazy">Chill and Lazy</option>
+    </select>
+<label>Cat Mood</label>
+    <select name="theme" id="theme">
+        <option value="none">Please Select</option>
+        <option value="happy">Happy and Content</option>
+        <option value="curious">Curious and Inquisitive</option>
+        <option value="grumpy">Grumpy and Pouty</option>
+        <option value="silly">Silly and Funny</option>
+        <option value="majestic">Majestic and Elegant</option>
+    </select>
+      
+</fieldset>
+<label>Description 
+    <textarea name="comments"></textarea>
+</label>
+<input type="submit" value="Submit">
+</form>
+    </main>
+    
+    <!-- start the page footer -->
+<footer>
+<p>&copy; Copyright 2024 | Kimhann Song &bull; <a href="mailto:email@gmail.com">Email Us</a></p>
+</footer>
+</body>
+</html>
+        
