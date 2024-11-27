@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cat Gallery Capture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sharing pictures of adorable and cute cats photos.">
+    <meta name="author" content="Kimhann Song">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="catgallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<!-- This is the start of the header section. -->
+<header>
+    <img src="images/caticon.png" alt="Cat Logo for the cat content website" width="100" height="62">
+        <h1>Cat Gallery Capture</h1>
+        <p>The home of adorable cat photos.</p>
+    </header>
+
+    <!-- This is the start of the navigation section. -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="submit.html">Submit a Picture</a></li>
+            <li><a href="event.html">Event</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the start of the main section. -->
+    <main>
+        <h1>Submit Your Favorite Cat Moments</h1>
+        <form method="get" class="myform" action="thanks.html">
+
+            <fieldset>
+                <legend>Cat Details Section</legend>
+                <label for="cat_name">Cat Name* </label>
+                <input type="text" id="cat_name" name="cat_name" required>
+
+                <label for="breed_type">Breed Type* </label>
+                <input type="text" id="breed_type" name="breed_type" required>
+
+                <label for="cat_gender">Cat Gender* </label>
+                <input type="text" id="cat_gender" name="cat_gender" required>
+
+                <label for="cat_age">Cat Age* </label>
+                <input type="text" id="cat_age" name="cat_age" required>
+
+                <label for="owner_name">Owner Name* </label>
+                <input type="text" id="cat_gender" name="cat_gender" required>
+
+                <label for="email">Email Address* </label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Type of Submission</legend>
+                <label>
+                    <input type="radio" name="method" value="picture" required> Picture
+                </label>
+                <label>
+                    <input type="radio" name="method" value="video"> Video
+                </label>
+                <label>
+                    <input type="radio" name="method" value="gif"> Gif
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Theme of the Content</legend>
+                <label>
+                    <input type="checkbox" name="cute" value="Cute"> Cute
+                </label>
+                <label>
+                    <input type="checkbox" name="funny" value="Funny"> Funny
+                </label>
+                <label>
+                    <input type="checkbox" name="artistic" value="Artistic"> Artistic
+                </label>
+                <label>
+                    <input type="checkbox" name="heartwarming" value="Heartwarming"> Heartwarming
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>What Kind of Cats Are They?</legend>
+                <label for="personality">Cat Personality Types</label>
+                <select name="personality" id="personality">
+                    <option value="none">Please Select</option>
+                    <option value="goofy">Goofy and Playful</option>
+                    <option value="shy">Shy and Mysterious</option>
+                    <option value="adventurous">Bold and Adventurous</option>
+                    <option value="lazy">Chill and Lazy</option>
+                </select>
+
+                <label for="mood">Cat Mood</label>
+                <select name="mood" id="mood">
+                    <option value="none">Please Select</option>
+                    <option value="happy">Happy and Content</option>
+                    <option value="curious">Curious and Inquisitive</option>
+                    <option value="grumpy">Grumpy and Pouty</option>
+                    <option value="majestic">Majestic and Elegant</option>
+                </select>
+            </fieldset>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="comments"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+<!-- This is the start of the footer section. -->
+    <footer>
+        <p>&copy; Copyright 2024 | Kimhann Song &bull; <a href="mailto:email@gmail.com">Email Us</a></p>
+    </footer>
+</body>
+</html>
